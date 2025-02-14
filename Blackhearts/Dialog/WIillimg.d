@@ -1,9 +1,14 @@
 BEGIN WIillimg
 
-CHAIN IF ~NumTimesTalkedTo(0) Global("BHBG1Quest","GLOBAL",6)~ THEN WIillimg ii7.0
-	@2636
-	== %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @2637
-	== WIillimg IF ~InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @2638
+IF ~NumTimesTalkedTo(0) Global("BHBG1Quest","GLOBAL",6)~ THEN BEGIN ii7.0
+	SAY @2636
+	IF ~Class(Player1,MAGE_ALL)~  REPLY @2639 GOTO ii7.2
+	IF ~~  REPLY @2640 GOTO ii7.1
+	IF ~Global("WIillimg_IMOEN","GLOBAL",0) InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("WIillimg_IMOEN","GLOBAL",1)~ EXTERN %IMOEN_JOINED% WIillimg_IMOEN
+END
+
+CHAIN WIillimg ii7.01
+	@2638
 END
 		+ ~Class(Player1,MAGE_ALL)~ + @2639 + ii7.2
 		++ @2640 + ii7.1
@@ -29,3 +34,11 @@ CHAIN WIillimg ii8.2
 
 CHAIN WIillimg ii8.3
 	@2649 DO ~ApplySpell(Myself,WIZARD_BLUR) StartCutSceneMode() StartCutSceneEx("WIcuts10",TRUE) DestroySelf()~ EXIT
+
+APPEND %IMOEN_JOINED%
+
+IF ~Global("WIillimg_IMOEN","GLOBAL",1)~ THEN BEGIN WIillimg_IMOEN
+  SAY @2637
+  IF ~~ THEN EXTERN WIillimg ii7.01
+END
+	END
