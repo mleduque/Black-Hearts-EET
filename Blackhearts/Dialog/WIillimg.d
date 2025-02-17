@@ -34,11 +34,3 @@ CHAIN WIillimg ii8.2
 
 CHAIN WIillimg ii8.3
 	@2649 DO ~ApplySpell(Myself,WIZARD_BLUR) StartCutSceneMode() StartCutSceneEx("WIcuts10",TRUE) DestroySelf()~ EXIT
-
-APPEND %IMOEN_JOINED%
-
-IF ~~ THEN BEGIN WIillimg_IMOEN
-  SAY @2637
-  IF ~~ THEN EXTERN WIillimg ii7.01
-END
-	END
