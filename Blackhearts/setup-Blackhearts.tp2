@@ -943,8 +943,13 @@ COPY ~Blackhearts/CRE/WINIKN03.cre~ ~override/WINIKN03.cre~
 	SAY NAME1 @3313
 	SAY NAME2 @3313
 WRITE_LONG 0x14 ~400~ // XP
+WRITE_BYTE 0x45 ~100~ // Hide
+WRITE_BYTE 0x271 ~1~ // General Humanoid
+WRITE_BYTE 0x272 ~1~ // Race Human
+WRITE_BYTE 0x273 ~4~ // Class Thief
 WRITE_ASCII DIALOG ~WINIGKNI~ (8)
 WRITE_ASCII DEATHVAR ~WINIKN03~ (8)
+ADD_CRE_ITEM ~POTN10~ #1 #0 #0 ~identified&unstealable~ ~qitem1~
 
 COPY ~Blackhearts/CRE/WIOGMA01.cre~ ~override/WIOGMA01.cre~
 	SAY NAME1 @96
