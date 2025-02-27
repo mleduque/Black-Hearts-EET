@@ -1,5 +1,5 @@
 *****************************************
-## Black Hearts BG1 - The Huntress v1.1
+## Black Hearts BG1 - The Huntress v1.2
 *****************************************
 
 #### A mod for BGEE, BG2EE and EET !
