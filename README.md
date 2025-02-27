@@ -163,6 +163,12 @@ For any issues had with the mod, send me a message through the beamdog site or c
 
 </details>
 
+- Version 1.2 (February, 2025)
+
+	- Little addition for the Night Knives next Drakon Tavern.
+	- Fix for first Illasera image when entering Baldur's Gate.
+	- Simplify workaround for Illasera placement in Elfsong tavern.
+
 
 **Special thanks for reporting issues and helping :**
 
