@@ -169,6 +169,13 @@ For any issues had with the mod, send me a message through the beamdog site or c
 	- Fix for first Illasera image when entering Baldur's Gate.
 	- Simplify workaround for Illasera placement in Elfsong tavern.
 
+- Version 1.3 (, 2025)
+
+	- Assign new WISKEL.BAF to WISKEL.cre with WILLYRK.cre (Sazazir) correct death vars.
+	- WIMISC02.itm weigth
+	- Remove unused item from [Nerys inventory.](https://github.com/A-Wizard-Did-It/Black-Hearts/issues/13)
+	- Small [typo.](https://github.com/A-Wizard-Did-It/Black-Hearts/issues/12)
+
 
 **Special thanks for reporting issues and helping :**
 
