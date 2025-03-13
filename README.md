@@ -169,7 +169,7 @@ For any issues had with the mod, send me a message through the beamdog site or c
 	- Fix for first Illasera image when entering Baldur's Gate.
 	- Simplify workaround for Illasera placement in Elfsong tavern.
 
-- Version 1.3 (, 2025)
+- Version 1.3 (IN PROGRESS, 2025)
 
 	- Assign new WISKEL.BAF to WISKEL.cre with WILLYRK.cre (Sazazir) correct death vars.
 	- WIMISC02.itm weigth
