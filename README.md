@@ -175,6 +175,8 @@ For any issues had with the mod, send me a message through the beamdog site or c
 	- WIMISC02.itm weigth
 	- Remove unused item from [Nerys inventory.](https://github.com/A-Wizard-Did-It/Black-Hearts/issues/13)
 	- Small [typo.](https://github.com/A-Wizard-Did-It/Black-Hearts/issues/12)
+	- Original game Global "BATTLE_COMPLETE" is set after going trough BGinBG so Slimes where destroyed immediatly in WI0008, so create separate creatures and script to prevent it.
+	- Remove NumTimesTalkedTo(0) in WIillimg.d to continue the search of preventing issue with Illasera Image when entering Baldur's Gate.
 
 
 **Special thanks for reporting issues and helping :**
