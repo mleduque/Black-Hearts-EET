@@ -1,6 +1,6 @@
 BEGIN WIillimg
 
-IF ~NumTimesTalkedTo(0) Global("BHBG1Quest","GLOBAL",6)~ THEN BEGIN ii7.0
+IF ~Global("BHBG1Quest","GLOBAL",6)~ THEN BEGIN ii7.0
 	SAY @2636
 	IF ~Class(Player1,MAGE_ALL)~  REPLY @2639 GOTO ii7.2
 	IF ~~  REPLY @2640 GOTO ii7.1
